@@ -3,5 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/diff-community/readme-fm.git",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.8.3"
+  }
 }
