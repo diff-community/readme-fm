@@ -38,6 +38,7 @@ module.exports = ({ content, title }) => `
     ${metaInfo()}
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="/public/logo.png">
+    <link rel="canonical" href="https://readme.fm" />
     <title>${title}</title>
   </head>
   <body class="bg-gray-100">
