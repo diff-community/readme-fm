@@ -1,15 +1,15 @@
 const metaInfo = () => [
   {
     name: 'description',
-    content: 'README.fm is a podcast aimed at bridging the gap between people and technology for social good'
+    content: 'A podcast aimed at bridging the gap between people and technology for social good'
   },
   {
     property: 'og:title',
-    content: 'README.fm | A podcast bridging the gap between people and technology for social good',
+    content: 'README.fm | humanizing technology through podcasts',
   },
   {
     property: 'og:description',
-    content: 'README.fm is a podcast aimed at bridging the gap between people and technology for social good'
+    content: 'A podcast aimed at bridging the gap between people and technology for social good'
   },
   {
     property: 'og:site_name',
@@ -21,7 +21,7 @@ const metaInfo = () => [
   },
   {
     property: 'og:image',
-    content: 'https://readme-fm.netlify.com/public/logo.png'
+    content: 'https://readme.fm/public/logo.png'
   }
 ].map((tag) => {
   const [a, b] = Object.keys(tag);
