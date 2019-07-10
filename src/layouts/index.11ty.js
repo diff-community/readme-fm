@@ -34,6 +34,7 @@ module.exports = ({ content, title }) => `
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="eQMU6hVTR8UijnrKXqWYIkw7eerj4Lvym38bBWzIdPU" />
     ${metaInfo()}
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="/public/logo.png">
