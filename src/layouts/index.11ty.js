@@ -36,6 +36,7 @@ module.exports = ({ content, title }) => `
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     ${metaInfo()}
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="/public/logo.png">
     <title>${title}</title>
   </head>
   <body class="bg-gray-100">
