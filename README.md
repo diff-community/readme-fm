@@ -1,4 +1,4 @@
-[Check it out](https://soundcloud.com/readme-fm)
+[Check it out](soundcloud.com/readme-fm)
 
 **Hello**
 
