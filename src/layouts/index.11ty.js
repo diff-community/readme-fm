@@ -21,7 +21,7 @@ const metaInfo = () => [
   },
   {
     property: 'og:image',
-    content: ''
+    content: 'https://readme-fm.netlify.com/public/logo.png'
   }
 ].map((tag) => {
   const [a, b] = Object.keys(tag);
