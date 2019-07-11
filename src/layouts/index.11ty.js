@@ -1,15 +1,15 @@
 const metaInfo = () => [
   {
     name: 'description',
-    content: 'README.fm is a podcast aimed at bridging the gap between people and technology for social good'
+    content: 'Interested in civic-tech? Find out what is happening in South Africa\'s civic-tech communtiy via the README.fm podcast'
   },
   {
     property: 'og:title',
-    content: 'README.fm | A podcast bridging the gap between people and technology for social good',
+    content: 'README.fm: A civic-tech podcast',
   },
   {
     property: 'og:description',
-    content: 'README.fm is a podcast aimed at bridging the gap between people and technology for social good'
+    content: 'Interested in civic-tech? Find out what is happening in South Africa\'s civic-tech communtiy via the README.fm podcast'
   },
   {
     property: 'og:site_name',
@@ -21,7 +21,7 @@ const metaInfo = () => [
   },
   {
     property: 'og:image',
-    content: 'https://readme-fm.netlify.com/public/logo.png'
+    content: 'https://readme.fm/public/logo.png'
   }
 ].map((tag) => {
   const [a, b] = Object.keys(tag);
@@ -44,4 +44,9 @@ module.exports = ({ content, title }) => `
   <body class="bg-gray-100">
     ${content}
   </body>
+  <footer class="flex flex-wrap items-center justify-around py-5 mt-10 font-mono bg-black text-white text-center">
+    <span class="px-4 text-xs">
+      <b>README.fm</b> is a project started by <a class="text-blue-500" href="https://diff.org.za">Diff.org.za</a>
+    </span>
+  </footer>
 </html>`
