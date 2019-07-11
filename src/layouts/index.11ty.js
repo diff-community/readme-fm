@@ -1,7 +1,7 @@
 const metaInfo = () => [
   {
     name: 'description',
-    content: 'Interested in civic-tech? Find out what is happening in South Africa\'s civic-tech communtiy via the README.fm podcast'
+    content: 'Interested in civic-tech? Find out what is happening in South Africa\'s civic-tech community via the README.fm podcast'
   },
   {
     property: 'og:title',
@@ -9,7 +9,7 @@ const metaInfo = () => [
   },
   {
     property: 'og:description',
-    content: 'Interested in civic-tech? Find out what is happening in South Africa\'s civic-tech communtiy via the README.fm podcast'
+    content: 'Interested in civic-tech? Find out what is happening in South Africa\'s civic-tech community via the README.fm podcast'
   },
   {
     property: 'og:site_name',
