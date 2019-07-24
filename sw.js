@@ -13,6 +13,10 @@ self.addEventListener('install', (e) => {
   )
 });
 
+self.addEventListener('activate', (e) => {
+  e.waitUntil(self.clients.claim());
+});
+
 self.addEventListener('fetch', (e) => {
   if(e.request.url === encodeURI('https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css')) {
     e.respondWith(
