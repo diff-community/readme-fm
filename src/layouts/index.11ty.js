@@ -40,6 +40,7 @@ module.exports = ({ content, title }) => `
     <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="/public/logo.png">
     <link rel="canonical" href="https://readme.fm" />
+    <link rel="manifest" href="/manifest.json" />
     <title>${title}</title>
   </head>
   <body class="bg-gray-100">

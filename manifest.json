@@ -1,0 +1,13 @@
+{
+  "name": "README.fm",
+  "short_name": "README",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "/public/logo.png",
+      "type": "image/png",
+      "sizes": "400x400"
+    }
+  ]
+}
