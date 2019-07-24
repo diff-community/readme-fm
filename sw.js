@@ -14,11 +14,19 @@ self.addEventListener('install', (e) => {
 });
 
 self.addEventListener('fetch', (e) => {
-  e.respondWith(
-    fetch(e.request).catch(() => {
-      return caches.open('assets').then(cache => {
-        return cache.match(e.request);
-      });
-    })
-  )
+  if(e.request.url === encodeURI('https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css')) {
+    e.respondWith(
+      caches.open('assets').then(cache => {
+        return cache.match(e.request.url);
+      })
+    )
+  } else {
+    e.respondWith(
+      fetch(e.request).catch(() => {
+        return caches.open('assets').then(cache => {
+          return cache.match(e.request);
+        });
+      })
+    )
+  }
 });
