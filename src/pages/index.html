@@ -19,3 +19,15 @@ title: "README.fm: A civic-tech podcast"
     </div>
   </div>
 </main>
+
+<script>
+const registerServiceWorker = async () => {
+  if (!navigator.serviceWorker) {
+    return false;
+  }
+
+  await navigator.serviceWorker.register('/sw.js');
+}
+
+registerServiceWorker();
+</script>
