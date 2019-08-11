@@ -1,8 +1,6 @@
----
-layout: index.11ty.js
-title: "README.fm: A civic-tech podcast"
----
+const html = require('html-template-tag');
 
+const page = () => html`
 <main>
   <div class="container flex h-screen mx-auto items-center justify-around flex-wrap">
     <div class="px-6">
@@ -33,3 +31,39 @@ const registerServiceWorker = async () => {
 
 registerServiceWorker();
 </script>
+`;
+
+const metaInfo = [
+  {
+    name: 'description',
+    content: 'Interested in civic-tech? Find out what is happening in South Africa\'s civic-tech community via the README.fm podcast'
+  },
+  {
+    property: 'og:title',
+    content: 'README.fm: A civic-tech podcast',
+  },
+  {
+    property: 'og:description',
+    content: 'Interested in civic-tech? Find out what is happening in South Africa\'s civic-tech community via the README.fm podcast'
+  },
+  {
+    property: 'og:site_name',
+    content: 'README.fm'
+  },
+  {
+    property: 'og:url',
+    content: 'https://readme.fm'
+  },
+  {
+    property: 'og:image',
+    content: 'https://readme.fm/public/logo.png'
+  }
+];
+
+module.exports = {
+  layout: 'default',
+  page,
+  head: () => [
+    ...metaInfo.map((tag) => ['meta', tag]),
+  ],
+};
