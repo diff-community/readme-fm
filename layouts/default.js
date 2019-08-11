@@ -14,6 +14,19 @@ module.exports = ({ title, content, head }) => html`
     <link rel="canonical" href="https://readme.fm" />
     <link rel="manifest" href="/manifest.json" />
     <title>${title}</title>
+    <script>
+      const registerServiceWorker = async () => {
+        if (!navigator.serviceWorker) {
+          return false;
+        }
+
+        const reg = await navigator.serviceWorker.register('/sw.js');
+
+        await reg.update();
+      }
+
+      registerServiceWorker();
+    </script>
   </head>
   <body class="bg-gray-100">
     $${content}

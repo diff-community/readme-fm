@@ -17,20 +17,6 @@ const page = () => html`
     </div>
   </div>
 </main>
-
-<script>
-const registerServiceWorker = async () => {
-  if (!navigator.serviceWorker) {
-    return false;
-  }
-
-  const reg = await navigator.serviceWorker.register('/sw.js');
-
-  await reg.update();
-}
-
-registerServiceWorker();
-</script>
 `;
 
 const metaInfo = [
