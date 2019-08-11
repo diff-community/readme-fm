@@ -19,37 +19,35 @@ const page = () => html`
 </main>
 `;
 
-const metaInfo = [
-  {
-    name: 'description',
-    content: 'Interested in civic-tech? Find out what is happening in South Africa\'s civic-tech community via the README.fm podcast'
-  },
-  {
-    property: 'og:title',
-    content: 'README.fm: A civic-tech podcast',
-  },
-  {
-    property: 'og:description',
-    content: 'Interested in civic-tech? Find out what is happening in South Africa\'s civic-tech community via the README.fm podcast'
-  },
-  {
-    property: 'og:site_name',
-    content: 'README.fm'
-  },
-  {
-    property: 'og:url',
-    content: 'https://readme.fm'
-  },
-  {
-    property: 'og:image',
-    content: 'https://readme.fm/public/logo.png'
-  }
-];
-
 module.exports = {
   layout: 'default',
   page,
   head: () => [
-    ...metaInfo.map((tag) => ['meta', tag]),
+    ...[
+      {
+        name: 'description',
+        content: 'Interested in civic-tech? Find out what is happening in South Africa\'s civic-tech community via the README.fm podcast'
+      },
+      {
+        property: 'og:title',
+        content: 'README.fm: A civic-tech podcast',
+      },
+      {
+        property: 'og:description',
+        content: 'Interested in civic-tech? Find out what is happening in South Africa\'s civic-tech community via the README.fm podcast'
+      },
+      {
+        property: 'og:site_name',
+        content: 'README.fm'
+      },
+      {
+        property: 'og:url',
+        content: 'https://readme.fm'
+      },
+      {
+        property: 'og:image',
+        content: 'https://readme.fm/public/logo.png'
+      }
+    ].map((tag) => ['meta', tag]),
   ],
 };
