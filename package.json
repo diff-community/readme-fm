@@ -4,7 +4,16 @@
   "main": "index.js",
   "repository": "https://github.com/diff-community/readme-fm.git",
   "license": "MIT",
+  "scripts": {
+    "reload": "npx nodemon -w ./layouts -w ./pages -w ./public --exec npx hydrogen build --dev",
+    "serve": "npx live-server ./dist",
+    "dev": "npx npm-run-all --parallel reload serve"
+  },
   "devDependencies": {
-    "@11ty/eleventy": "^0.8.3"
+    "live-server": "^1.2.1"
+  },
+  "dependencies": {
+    "html-template-tag": "^3.1.0",
+    "hydrogen-cli": "^0.6.2"
   }
 }
