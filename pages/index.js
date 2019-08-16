@@ -21,6 +21,7 @@ const page = () => html`
 
 module.exports = {
   layout: 'default',
+  title: 'README.fm: A civic-tech podcast',
   page,
   head: () => [
     ...[
